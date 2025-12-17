@@ -9,49 +9,106 @@
   <style>
   
         /* css style here, this is a css comment so it will not show */
+
+        header {background-color: rgb(52, 56, 56);
+        font-family: Times, serif; font-size: 25pt; font-weight: bold;
+        color: rgb(168, 168, 168);
+        padding: 30px; padding-left: 100px;}
+
+        
+        body {font-family: 'Times New Roman', Times, serif; font-size: 14pt;
+              background-color: rgb(191, 190, 190);
+              margin: 0;}
         p {margin: 40px; padding: 10px;}
-     li { 
-          margin: 10px; 
-        }
+        li {margin: 10px;}
+        ol {margin-bottom: 40px;}
+        div {margin-left: 100px; margin-right: 100px; }
+        img { float: left; border-radius: 40px;}
+
+        a:link { color: black;}   /* normal */
+        a:visited {color: grey;}   /* after clicking */
+        a:hover {color: blueviolet;}    /* mouse over */
+
+        .img {display: flex; gap:10px; align-items: flex-start;}
+        .statement { max-width: 900px;}
+        
+        @media (max-width: 600px) {.img {flex-direction: column;}
+                                   .statement {margin-left: 0; margin-right: 0;}}
+
+        .homework, .reading {background-color:hsl(190, 21%, 77%); border-radius: 40px;
+                  padding: 40px; /* margin-top: 40px; */}
 
   </style>
 </head>
 
 
 <body>
-    <h1>Lab #</h1>
-    <h2>Haisi Hu</h2>
- 
-    <img src="SwimRabbit.png" width="300"> <!--put your selfie here-->
+<header>
+    Lab # 
+    <br>
+    Haisi Hu
+</header>
 
+<div class="img">
+    <img src="headshot.png" width="300"> <!--put your selfie here-->
+
+<span class="statement">
     <p> <strong>Creative Statement</strong>
     <br> Introduce yourself and your creative interests. 
       Explain the type of media/design you want to make, your inspirations, 
       and themes you want to explore. </p>
+    </span>
+</div>
 
-<ul>
-    
-  <li>
+<br>
+
+  <div class="homework">
+  
        <strong> Homework List </strong>
-        <ol>
-            <li>Homework FEb 3</li>
-            <li>Homework FEb 10</li>
-            <li>Homework FEb 21</li>
-            <li>Homework Mar 3</li>
-        </ol>
-  </li>
-    
-  <li style="margin-top: 40px;">
+        <ul>
+            <li>Homework 2 - Cropping and Resizing Images </li> <!-- you will link these to your homework2.html -->
+             
+             <ol>
+              <li>Image A</li>
+              <li>Image B</li>
+            </ol> 
+          
+            <li>Homework 3 - Depth of Field and Camera Raw</li>
+            <ol>
+              <li>Depth of Field exercise</li>
+              <li>Filed Blur exercise</li>
+              <li>Camera Raw Fix 1</li>
+              <li>Camera Raw Fix 2</li>
+            </ol> 
+            <li>Homework 4 - Social Campaign Photomontage  (part 1) </li>
+            <ol>
+              <li>Potomontage - title</li>
+              <li>Potomontage - title</li>
+            </ol>
+            <li>Homework 5 - Social Campaign Photomontage  (part 2)</li>
+             <ol>
+              <li>Potomontage  - title</li>
+              <li>Potomontage - title</li>
+            </ol>
+             <li><a href="homework6.html"> Homework 6 - Emotive Eye & Illustrated Environment</a></li>
+              <li>Homework 7 - Color and Pattern </li>
+               <li>Homework 8 - Animated GIFs </li>
+                <li>Homework 9 - Interactive Story part 1 </li>
+                 <li>Homework 10 - Interactive Story part 2 </li>
+        </ul>
+  
+  </div>
+  <div class="reading">
 
       <strong>Reading List</strong>
         <ol>
-            <li>Reading ABC</li>
+            <li>Susan Sontag, On Photography, Ch. 1 “In Plato’s Cave”</li> <!-- Link this to your reading1.html -->
             <li>Reading Title</li>
             <li>Reading Title</li>
             <li>Reading Title</li>
         </ol>
-  </li>
-</ul>
+  
+</div>
 
 
 </body>
